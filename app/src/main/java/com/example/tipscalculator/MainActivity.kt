@@ -1,5 +1,6 @@
 package com.example.tipscalculator
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -24,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        enableEdgeToEdge()
 
         var percentage: Int = 0
         binding.rbPercentage10.setOnCheckedChangeListener { _, isChecked ->
@@ -82,19 +82,30 @@ class MainActivity : AppCompatActivity() {
                 val totalTemp = totalTable / nPeople
                 val tips = totalTemp * percentage / 100
                 val totalWithTips = totalTemp + tips
-                binding.tvResult.text = "Total with tips: $totalWithTips"
-                println("Andre1 " + totalWithTips)
+
+                val intent = Intent (this, SummaryActivity::class.java)
+                intent.apply {
+                    //Salvando os dados da primeira Activity para recuperar na segunda activity
+                    putExtra("totalAmount", totalTable)
+                    putExtra("numPeople", numbOfPeopleSelected)
+                    putExtra("percentage" , percentage)
+                    putExtra("totalWithTips", totalWithTips)
+                }
+                clean()
+                startActivity(intent)
             }
         }
-
         //Lógica do botão limpar, limpa todos os editáveis na tela do usuário
         binding.btnClean.setOnClickListener {
-            binding.tvResult.text = ""
-            binding.tieTotalAmount.setText("")
-            binding.rbPercentage10.isChecked = false
-            binding.rbPercentage15.isChecked = false
-            binding.rbPercentage20.isChecked = false
-
+            clean()
         }
+    }
+    fun clean() {
+
+        binding.tieTotalAmount.setText("")
+        binding.rbPercentage10.isChecked = false
+        binding.rbPercentage15.isChecked = false
+        binding.rbPercentage20.isChecked = false
+
     }
 }
