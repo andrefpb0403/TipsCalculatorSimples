@@ -25,10 +25,10 @@ class SummaryActivity : AppCompatActivity() {
 
 
 
-        binding.tvTotalAmount.text = "R$ %.2f".format(totalAmount)
-        binding.tvNumPeople.text = "$numPeople pessoas"
-        binding.tvPercentage.text = "$percentage %"
-        binding.tvTotalPerPerson.text = "R$ %.2f".format(totalWithTips)
+        binding.tvTotalAmount.text = "R$ " + totalAmount.toString()
+        binding.tvNumPeople.text = numPeople.toString() + " pessoas"
+        binding.tvPercentage.text = percentage.toString() + " %"
+        binding.tvTotalPerPerson.text = "R$ " + totalWithTips.toString()
 
         binding.btnRecalculate.setOnClickListener {
             finish()

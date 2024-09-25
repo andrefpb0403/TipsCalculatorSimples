@@ -16,13 +16,12 @@
 
     <TextView
         android:id="@+id/tv_title"
+        style="@style/Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
         android:text="Resumo"
-        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -119,9 +118,10 @@
         android:layout_marginEnd="16dp"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:maxLength="8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/separator"
-        tools:text="R$ " />
+        tools:text="57.50" />
 
     <View
         android:id="@+id/separator"
