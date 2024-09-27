@@ -1,16 +1,20 @@
 <resources>
     <string name="app_name">Tips Calculator</string>
-    <string-array name="num_people">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-    </string-array>
+    <string name="summary_title">Summary</string>
+    <string name="summary_subtitle">See bellow the summary of your bill</string>
+    <string name="total_da_conta">Bill Amount:</string>
+    <string name="divido_por">Divided by:</string>
+    <string name="porcentagem_da_gorjeta">Tips Percentage:</string>
+    <string name="total_a_pagar_por_pessoa">Total payable per person:</string>
+    <string name="recalcular">Recalculate</string>
+    <string name="main_title">Tips Calculator</string>
+    <string name="main_subtitle">Fill in the fields below to calculate your account</string>
+    <string name="hint_total_amount">Enter the total amount of your bill:</string>
+    <string name="hint_num_people">Enter the number of people</string>
+    <string name="hint_percentage">Enter the % of tip</string>
+    <string name="btn_clean">Clean</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="tie_hint_total_amount">e.g: $ 100.00</string>
+    <string name="tie_hint_num_people">e.g: 4</string>
+    <string name="tie_hint_percentage">e.g: 10%</string>
 </resources>

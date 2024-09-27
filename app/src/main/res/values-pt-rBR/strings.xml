@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculadora de Gorjeta</string>
+    <string name="summary_title">Resumo</string>
+    <string name="summary_subtitle">Veja abaixo o resumo da sua conta</string>
+    <string name="total_da_conta">Total da Conta:</string>
+    <string name="divido_por">Divido por:</string>
+    <string name="porcentagem_da_gorjeta">Porcentagem da gorjeta:</string>
+    <string name="total_a_pagar_por_pessoa">Total a pagar por pessoa:</string>
+    <string name="recalcular">Recalcular</string>
+    <string name="main_title">Calculadora de Gorjeta</string>
+    <string name="main_subtitle">Preencha os campos abaixo para realizar o calculo da sua conta</string>
+    <string name="hint_total_amount">Digite o valor total da sua conta:</string>
+    <string name="hint_num_people">Digite a quantidade de pessoas</string>
+    <string name="hint_percentage">Digite a % da taxa de serviço ou gorjeta</string>
+    <string name="btn_clean">Limpar</string>
+    <string name="btn_calculate">Calcular</string>
+    <string name="tie_hint_total_amount">ex: R$ 100.00</string>
+    <string name="tie_hint_num_people">ex: 4</string>
+    <string name="tie_hint_percentage">ex: 10%</string>
+</resources>
